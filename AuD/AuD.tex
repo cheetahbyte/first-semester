@@ -1,0 +1,108 @@
+\documentclass{book}
+\usepackage[ngerman]{babel}
+\begin{document}
+\begin{titlepage}
+    \centering
+	{\LARGE \textsc{Hochschule Darmstadt}\par}
+	\vspace{1cm}
+	{\Large \textsc{Zusammenfassung: 1. Semester}\par}
+	\vspace{1.5cm}
+	{\huge\bfseries Algorithmen und Datenstrukturen\par}
+	\vspace{2cm}
+	{\Large\itshape Leonhard Breuer\par}
+
+% Bottom of the page
+	{\large \today\par}
+\end{titlepage}
+\tableofcontents
+
+\chapter{Der Begriff Algorithmus}
+\paragraph{Den Begriff Algorithmus} gibt es bereits seit dem Mittelalter.
+\paragraph{Das Konzept Algorithmus} war bereits den alten Griechen bekannt.
+
+\section{Sieb des Erasthostenes}
+Das S.d.E. ermöglicht das Finden aller Primzahlen bis zu einer gewählten maximalen Zahl $n$.
+\paragraph*{Ablauf des Algorithmus} ist wie folgt
+\begin{enumerate}
+	\item Schreibe alle Zahlen von 1 bis $n$ auf.
+	\item Für alle Zahlen $i$ von 2 bis $\sqrt{n}$: Alle Vielfachen von $i$ streichen.
+	\item Schreibe alle nicht gestrichenen Zahlen herraus.
+\end{enumerate}
+\section{Algorithmus des Euklied (ggT)}
+Der Algorthimus des Euklied dient zum Herausfinden des \textit{größten gemeinsamen Teilers} zweier Zahlen.
+\paragraph*{Ablauf des Algorithmus} ist wie folgt. \\
+Ausgehend von den Zahlen $m$ und $m$ < 0 sowie $r$ welche den Rest der (ganzzahligen) Division repräsentiert.
+\begin{enumerate}
+	\item Teile $m$ durch $n$ mit Rest $r$ (es ergibt sich $r \geq n$).
+	\item Wenn $r = 0$, fertig mit Ergebnis $n$.
+	\item Ersetze $m$ mit $n$ und $n$ mit $r$ und mache mit \textit{1.} weiter.
+\end{enumerate}
+\section{Algorism}
+Das Wort \textit{Algorism} beschreibt das Addieren im Stellenwertsystem.
+\paragraph*{Ablauf des Algorithmus} ist wie folgt
+\begin{enumerate}
+	\item Schreibe die zu addierenden Zahlen rechtsbündig untereinenander.
+	\item Beginne ganz rechts mit der ersten Zahl.
+	\item Addiere die über dem Strich stehenden Ziffern der aktuellen Stelle zusammen.
+	\item Schreibe das Ergebnis unter den Strich
+	\item Setze diese Operationen für alle restlichen Stellen (beider Zahlen) fort.
+\end{enumerate}
+\chapter{Graphen und Bäume}
+Graphen und Bäume werden in der Informatik oftmals zur Beschreibung und Vereinfachung von  Problemen benötigt.
+\paragraph*{Ein Graph} besteht aus \texttt{Knoten (nodes)} und \texttt{Kanten (edges)}.
+\subparagraph*{Knoten} bilden die Menge \texttt{V} von Objekten \textit{v}.
+\subparagraph*{Kanten} bilden die Menge \texttt{E} von Tupeln \textit{e = (v, w)} mit $v,w \in V$. 
+\section{Graphen}
+\subsection{Pfade} Man unterscheidet zwischen \texttt{offenen} und \texttt{geschlossenen} Pfaden.
+\begin{description}
+	\item[offener Pfad] Start- und Endpunkt sind unterschiedlich
+	\item[geschlossener Pfad]  Führt am Ende an der Startpunkte zurück (Schleife)
+\end{description}
+\subsection{Annotationen}
+Annotationen können anliegen, an
+\begin{itemize}
+	\item \texttt{Knoten}: Als Knotengewicht
+	\item \texttt{Kanten}: Als Kantengewicht
+\end{itemize}
+Annotationen, seltener Gewichtungen, ermöglichen es Algorithmen, bzw. den kürzesten Weg zu ermitteln.
+\subsection{Grad eines Knotens}
+\begin{description}
+	\item[Bei gerichteten Kanten] unterscheidet man Aus- und Eingangsgrad.
+	\item[Bei ungerichteten Kanten] spricht man nur vom "Grad". 
+\end{description}
+Vereinfacht stellt der "Grad" eines Knoten die Anzahl der ein-/ausgehenden Verbindungen des Knoten(im Falle eines gerichteten Graphen) 
+und der Gesamtanzahl der Verbindungen des Knoten (im Falle eines ungerichteten Graphens) dar.
+\subsection{Gerichtete Graphen}
+\begin{itemize}
+	\item Alle Pfade sind \textit{offen}.
+	\item auch \textit{Digraph} oder \textit{directed graph}
+\end{itemize}
+\subsection{Gewichtete Graphen}
+Ein Graph ist gewichtet, sobald er über Annotationen verfügt.
+\subsection{Dependenzgraph (DAG)}
+Bei einem Dependenzgraphen beschreiben die Kanten, welche Tätigkeiten/Aufgaben vor 
+einer anderen erfüllt werden müssen.
+Enthält der gerichtete Graph hierbei keine Zyklen, so spricht man vom \textit{directed acyclic graph} oder kurz \textit{DAG}.
+\subsection{Ungerichteter Graph / Cliquen}
+Eine \textit{ungerichtete} Kante verhält sich wie zwei gerichtete Kanten. (eine hin und eine andere zurück)
+
+\paragraph{Zusammenhang} Wenn von einem Element aus, alle anderen Elemente (Knoten) in einem Graphen erreichbar sind,
+dann spricht man von einem zusammenhängenden Graphen. Gruppen, welche zwischen sich verbunden aber nicht mit anderen Gruppen verbunden sind, nennt man \textit{Zusammenhangskomponenten}
+\subsection{Multigraph} 
+Gibt es mehrere Kanten zwischen zwei Knoten (sowohl gerichtet als auch ungerichtet), so spricht man von einem
+Multigraph.
+\section{Bäume}
+Ein Baum ist \textit{zusammenhängender} \textit{ungerichteter} Graph ohne \textit{geschlossenen} Pfad.
+\subsection{Knoten und Blätter}
+\begin{description}
+	\item[Knoten mit Grad 1]  werden als Blatt (oder engl. Leaf) bezeichnet.
+	\item[Andere Knoten] werden als innere Knoten bzw. \textit{inner leaf} bezeichnet. 
+	\item[Elter(n)] ist der übergeordnete Knoten
+	\item[Kind] ist der untergeordnete Knoten 
+\end{description}
+\subsection{Bäume - Höhe, Grad}
+\begin{description}
+	\item[Grad] Der Grad eines Baumes ist immer der höchste Grad eines Knotens.
+	\item[Höhe] maximale Pfadlänge
+\end{description}
+\end{document}

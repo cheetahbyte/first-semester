@@ -1,0 +1,21 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {chapter}{\numberline {1}Der Begriff Algorithmus}{5}{}%
+\contentsline {paragraph}{Den Begriff Algorithmus}{5}{}%
+\contentsline {paragraph}{Das Konzept Algorithmus}{5}{}%
+\contentsline {section}{\numberline {1.1}Sieb des Erasthostenes}{5}{}%
+\contentsline {section}{\numberline {1.2}Algorithmus des Euklied (ggT)}{5}{}%
+\contentsline {section}{\numberline {1.3}Algorism}{6}{}%
+\contentsline {chapter}{\numberline {2}Graphen und Bäume}{7}{}%
+\contentsline {section}{\numberline {2.1}Graphen}{7}{}%
+\contentsline {subsection}{\numberline {2.1.1}Pfade}{7}{}%
+\contentsline {subsection}{\numberline {2.1.2}Annotationen}{7}{}%
+\contentsline {subsection}{\numberline {2.1.3}Grad eines Knotens}{8}{}%
+\contentsline {subsection}{\numberline {2.1.4}Gerichtete Graphen}{8}{}%
+\contentsline {subsection}{\numberline {2.1.5}Gewichtete Graphen}{8}{}%
+\contentsline {subsection}{\numberline {2.1.6}Dependenzgraph (DAG)}{8}{}%
+\contentsline {subsection}{\numberline {2.1.7}Ungerichteter Graph / Cliquen}{8}{}%
+\contentsline {paragraph}{Zusammenhang}{8}{}%
+\contentsline {subsection}{\numberline {2.1.8}Multigraph}{8}{}%
+\contentsline {section}{\numberline {2.2}Bäume}{8}{}%
+\contentsline {subsection}{\numberline {2.2.1}Knoten und Blätter}{9}{}%
+\contentsline {subsection}{\numberline {2.2.2}Bäume - Höhe, Grad}{9}{}%
