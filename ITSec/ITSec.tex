@@ -1,0 +1,150 @@
+\documentclass{book}
+\usepackage[ngerman]{babel}
+\usepackage{tcolorbox}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{fancyvrb}
+\begin{document}
+\begin{titlepage}
+    \centering
+	{\LARGE \textsc{Hochschule Darmstadt}\par}
+	\vspace{1cm}
+	{\Large \textsc{Zusammenfassung: 1. Semester}\par}
+	\vspace{1.5cm}
+	{\huge\bfseries IT-Sicherheit\par}
+	\vspace{2cm}
+	{\Large\itshape Leonhard Breuer\par}
+
+% Bottom of the page
+	{\large \today\par}
+\end{titlepage}
+\tableofcontents
+\chapter{Grundlagen}
+\section{Die alltäglichen Probleme}
+Täglich werden neue kritische Schwachstellen und Angriffe bekannt. Einige Beispiele:
+\begin{itemize}
+    \item September 2020: Shitrix-Anriff
+    \item Dezember 2018: Emotet (Banking Trojaner)
+    \item Januar 2018: Meltdown and Spectre 
+    \item Oktober 2017: Return of Coppersmith Attack 
+    \item Juli 2015: Jeep Cherokee Hack (Zugriff auf kritische Fahrzeugfunktionen)
+    \item Mitte 2014: Heartbleed (Fehler in OPENSSL)
+\end{itemize}
+\section{By Design}
+Wegen der sich ständig weiterentwickelnden Technik müssen IT-Sicherheit und Datenschutz von Anfang an berücksichtigt werden. \\
+\begin{center}
+\textbf{Security by Design} \& \textbf{Privacy by Design}
+\end{center}
+\subsection{Betriebssicherheit/Safety}
+Die Betriebssicherheit besagt, dass sich das Gerät/System konform seiner speziellen Funktion verhält bzw. das tut, was es soll.
+Die Safety umfasst auch einen Schutz aus Konsequenzen aus berechtigtem Handeln.
+\subsection{Informationssicherheit/Security}
+Die Security umfasst einen Schutz vor Konsequenzen aus vorsätzlichen und unberechtigen Handlungen.
+Gemäß dem \textbf{ ISO / IEC 2382-1} - Standard gilt:
+\begin{itemize}
+    \item Minimierung der Verwundbarkeit von Werten und Ressourcen
+    \item Bewahren eines Systems vor Missbrauch
+\end{itemize}
+Informationssicherheit umfasst IT-Systeme (und darin gespeicherte Daten) und \textunderscore{nicht} elektronisch verarbeitete Daten.
+\subsection{Wechselwirkungen}
+Hier einige Beispiele zu Wechselwirkungen von Safety und Security.
+\paragraph{Security-Verletzungen können Safety gefährden} Security Verletzungen können die Safety gefährden.
+\begin{enumerate}[label=\arabic*.]
+    \item \textbf{Sicherheitsaspekt (Security):} Ein unbefugter Mitarbeiter oder Hacker hat Zugriff auf elektronische Patientenakten im Krankenhausinformationssystem (KIS). Dies könnte durch unzureichende Zugriffskontrollen, Schwachstellen in der Software oder unsichere Passwörter verursacht werden.
+
+    \item \textbf{Sicherheitsaspekt (Safety):} Die unbefugte Offenlegung oder Manipulation von Patientendaten könnte zu falschen medizinischen Entscheidungen führen. Ärzte könnten falsche Medikamente verschreiben oder lebenswichtige Informationen über Patienten könnten in falsche Hände geraten, was die Sicherheit der Patienten ernsthaft gefährdet.
+\end{enumerate}
+\paragraph{Security-Maßnahme verletzt Safety} Es ist möglich, dass eine zur allgemeinen Sicherheit eingeführte Maßnahme negative Einflüsse auf die Safety hat.
+\begin{enumerate}[label=\arabic*.]
+    \item \textbf{Sicherheitsaspekt (Security):} Einführung biometrischer Zugangskontrollen im Labor, um den Zutritt zu sensiblen Bereichen zu reglementieren und unbefugten Zugriff zu verhindern.
+
+    \item \textbf{Sicherheitsaspekt (Safety):} Biometrische Systeme können jedoch zu Verzögerungen beim Zugang führen, insbesondere wenn Mitarbeiter dringend auf gefährliche Substanzen oder Notfälle reagieren müssen. Verzögerungen könnten die Sicherheit beeinträchtigen, wenn schnelle Reaktionen erforderlich sind.
+\end{enumerate}
+\paragraph{Safety-Verletzung gefährdet Security} Es ist möglich, dass durch eine Safety-Verletzung Sicherheitsrisiken entstehen.
+\begin{enumerate}[label=\arabic*.]
+    \item \textbf{Sicherheitsaspekt (Safety):} Mitarbeiter erhalten keine angemessene Schulung im Umgang mit den Sicherheitssystemen im Labor, wie z.B. Brandschutzsystemen oder Notausgängen.
+
+    \item \textbf{Sicherheitsaspekt (Security):} Durch die mangelnde Schulung könnten Mitarbeiter unwissentlich Sicherheitssysteme umgehen oder falsch verwenden, was die Integrität der Sicherheitsinfrastruktur gefährden könnte. Unbeabsichtigte Auslösungen von Sicherheitsmaßnahmen durch ungeschultes Personal könnten zu Fehlalarmen führen und die tatsächliche Sicherheit des Labors beeinträchtigen.
+
+\end{enumerate}
+\section{Definitionen}
+\paragraph{Information}
+Eine Information hat für den Empfänger i.d.R. einen Neuigkeitsgehalt. 
+In der Informatik/IT-Sicherheit sind Informationen immer schützenswerte Güter. 
+\paragraph{Daten} Repräsentation von Informationen z.B. als 
+\begin{itemize}
+    \item Bytefolge auf der Festplatte
+    \item als Netzwerkpaket
+\end{itemize}
+\paragraph{Datensicherheit} ist spezifischer als die Informationssicherheit.
+\paragraph{IT-System} ist ein dynamisches, technisches System, das Daten verarbeitet und speichert.
+\paragraph{IT-Verbund} ist die Gesamtheit von ... Objekten, die der Aufgabenerfüllung in einem Aufgabenbereich der Informationssicherheit dienen.
+
+\section{Schutzziele}
+\subsection{Übersicht}
+\begin{itemize}
+    \item Vertraulichkeit (engl. confidentiality)
+    \item Integrität (engl. entegrity)
+    \item Authenzität (engl. authencity)
+    \item Verbindlichkeit, Zurechenbarkeit (engl. accountability)
+    \item Verfügbarkeit (engl. availability)
+    \item Privatheit (engl. privacy)
+\end{itemize}
+\subsection{Vertraulichkeit} 
+Informationen dürfen nur für \textbf{autorisierten Personen} zugänglich sein. \\
+Ein spezielles Problem der Vertraulichkeit sind \textit{verdeckte Kanäle} und \textit{Seitenkanalangriffe}.
+\subsubsection{verdeckte Kanäle}
+Verdeckte Kanäle sind Kommunikationswege zwischen Systemkomponenten, die unautorisierte Informationen übertragen,
+indem sie bestehende Kommunikationsmechanismen oder Ressourcen auf unkonventionelle Weise nutzen, oft in einem Versuch, Sicherheitsmechanismen zu umgehen.
+\subsubsection{Seitenkanalangriffe}
+Seitenkanalangriffe sind Angriffsmethoden, bei denen ein Angreifer Informationen aus einem kryptographischen System extrahiert, nicht durch direkte Analyse der verschlüsselten Daten, sondern durch 
+Beobachtung von physikalischen Merkmalen wie Stromverbrauch, Laufzeit oder elektromagnetischer Strahlung während des Verschlüsselungsprozesses.
+
+\subsection{Integrität}
+Daten sind vollständig und \textbf{unverfälscht}.
+\subsection{Authenzität}
+Nachweisbarkeit der \textbf{Identität} eines Subjektes oder Objektes.
+
+\subsection{Verbindlichkeit}
+Ersteller von Daten kann diese Erstellung im Nachhinein \textbf{nicht abstreiten}.
+
+\subsection{Verfügbarkeit}
+Zugang und Befugnisse bleiben innerhalb der festgelegten Grenzen und werden nicht von unbefugten Dritten beeinflusst.
+
+\subsubsection{Berechnung der Verfügbarkeit}
+$$Verfuegbarkeit = \frac{Gesamtlaufzeit - Gesamtausfallzeit}{Gesamtlaufzeit}$$
+
+\subsection{Privatheit}
+Gewährleistung des informa4onellen Selbstbes4mmungsrechts und der Privatsphäre
+
+\section{IT-Sicherheit}
+Ziel der IT-Sicherheit ist: \textit{Gewährleistung eines oder mehrerer Schutzziele für Daten, Dienste und
+Anwendungen}
+
+\subsection{Security-Policy}
+Eine Security-Policy besteht aus:
+\begin{itemize}
+    \item Festlegung von Schutzzielen und Menge an Regeln.
+    \item Festlegung der Maßnahmen zum Erreichen der Schutzziele.
+    \item Festlegung von Verantwortlichkeiten und Rollen.
+\end{itemize}
+\subsection{Gefahr}
+Eine Situation oder ein Sachverhalt führt zu negativen Auswirkungen. Es gibt jedoch keinen \textit{zeitlicher}, \textit{räumlichen} oder \textit{personellen} Bezug.
+\subsection{Bedrohung}
+Eine Bedrohung ist eine \textbf{Gefahr} mit \textit{zeitlichem}, \textit{räumlichen} und \textit{personellen} Bezug zu einem Schutzziel.
+\subsection{Schwachstelle/Vulnerability}
+Eine Schwachstelle ermöglicht das Umgehen der bestehenden Sicherheitsmaßnahmen durch technische oder organisatorische Mängel.
+\subsection{Gefährdung}
+Möglichkeit des \textit{zeitlichen} oder \textit{räumlichen} Zusammentreffens eines schützenswerten Gutes mit einer Schwachstelle.
+\subsection{Angriff}
+Ein Angriff ist ein unautorisierter Zugriff oder Zugriffsversuch auf auf IT-Systeme oder Informationen.
+Angriffe nutzen immer \textit{Schwachstellen} aus. \\
+Man unterscheidet zwei Kategorien von Angriffe:
+\begin{description}
+    \item[aktiv] Ziel ist \textit{Informationsgewinnung}. Schutzziele \textit{Vertraulichkeit}, \textit{Privatheit}. Beispiel: Abhörung von Datenleitungen
+    \item[passiv] Ziel ist \textit{Informationsveränderung}. Schutziele \textit{Integrität}, \textit{Authenzität}, \textit{Verbindlichkeit} und 
+    \textit{Verfügbarkeit}. Beispiel: Vortäuschen einer falschen Identität
+\end{description}
+\subsection{Angreifer}
+Ein Angreifer ist eine \textit{Person}, \textit{System} oder eine \textit{Personengruppe}, die einen Angriff ausführt.
+\end{document}

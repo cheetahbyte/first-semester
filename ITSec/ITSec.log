@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.12.25)  3 JAN 2024 10:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.12.25)  4 JAN 2024 10:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/leo/Dokumente/hda/1-Semester/summaries/AuD/AuD.tex
-(/home/leo/Dokumente/hda/1-Semester/summaries/AuD/AuD.tex
+**/home/leo/Dokumente/hda/1-Semester/ITSec/ITSec.tex
+(/home/leo/Dokumente/hda/1-Semester/ITSec/ITSec.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (/usr/share/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2022/07/02 v1.4n Standard LaTeX document class
@@ -260,48 +260,56 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (/usr/share/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+)) (/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip50
+\enit@outerparindent=\dimen183
+\enit@toks=\toks31
+\enit@inbox=\box66
+\enit@count@id=\count278
+\enitdp@description=\count279
+) (/usr/share/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2023/01/19 4.5a verbatim text (tvz,hv)
-\FV@CodeLineNo=\count278
+\FV@CodeLineNo=\count280
 \FV@InFile=\read5
-\FV@TabBox=\box66
-\c@FancyVerbLine=\count279
-\FV@StepNumber=\count280
+\FV@TabBox=\box67
+\c@FancyVerbLine=\count281
+\FV@StepNumber=\count282
 \FV@OutFile=\write4
 ) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count281
-\l__pdf_internal_box=\box67
-) (./AuD.aux)
-\openout1 = `AuD.aux'.
+\l__color_backend_stack_int=\count283
+\l__pdf_internal_box=\box68
+) (./ITSec.aux)
+\openout1 = `ITSec.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count282
-\scratchdimen=\dimen183
-\scratchbox=\box68
-\nofMPsegments=\count283
-\nofMParguments=\count284
-\everyMPshowfont=\toks31
-\MPscratchCnt=\count285
-\MPscratchDim=\dimen184
-\MPnumerator=\count286
-\makeMPintoPDFobject=\count287
-\everyMPtoPDFconversion=\toks32
+\scratchcounter=\count284
+\scratchdimen=\dimen184
+\scratchbox=\box69
+\nofMPsegments=\count285
+\nofMParguments=\count286
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count287
+\MPscratchDim=\dimen185
+\MPnumerator=\count288
+\makeMPintoPDFobject=\count289
+\everyMPtoPDFconversion=\toks33
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -312,106 +320,86 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
-] (./AuD.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
+] (./ITSec.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [3])
+))
 \tf@toc=\write5
-\openout5 = `AuD.toc'.
+\openout5 = `ITSec.toc'.
 
- [4]
+ [3] [4
+
+]
 Kapitel 1.
-[5
 
-] [6]
-Kapitel 2.
-[7
-
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-Overfull \hbox (23.15335pt too wide) in paragraph at lines 79--81
-\OT1/cmr/m/n/10 Vereinfacht stellt der "Grad^^?ein-es Knoten die An-zahl der ein-/ausgehenden Verbindun-
+Overfull \hbox (17.195pt too wide) in paragraph at lines 24--26
+\OT1/cmr/m/n/10 T[]aglich wer-den neue kri-tis-che Schwach-stellen und An-griffe bekan-nt. Einige Beispiele: 
  []
 
 
-Overfull \hbox (17.05618pt too wide) in paragraph at lines 89--92
-\OT1/cmr/m/n/10 Bei einem De-pen-den-z-graphen beschreiben die Kan-ten, welche T[]atigkeiten/Aufgaben
- []
-
-
-Overfull \hbox (10.51527pt too wide) in paragraph at lines 95--97
- \OT1/cmr/bx/n/10 Zusam-men-hang[] \OT1/cmr/m/n/10 Wenn von einem El-e-ment aus, alle an-deren El-e-mente (Knoten)
- []
-
-
-Overfull \hbox (16.48674pt too wide) in paragraph at lines 95--97
-\OT1/cmr/m/n/10 in einem Graphen er-re-ich-bar sind, dann spricht man von einem zusam-menh[]angenden
- []
-
-[8] [9] [10
-
-]
-Kapitel 3.
-[11] [12]
-Kapitel 4.
-[13
-
-] [14
-
-]
-Kapitel 5.
-
-Underfull \hbox (badness 10000) in paragraph at lines 220--222
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
 
  []
 
-[15]
-Overfull \hbox (2.8277pt too wide) in paragraph at lines 247--249
- \OT1/cmr/bx/n/10 Geschwindigkeit \OT1/cmr/m/n/10 Die Geschwindigkeit des Weight-ed Quick Union ist deut-
+
+Overfull \hbox (11.59775pt too wide) in paragraph at lines 39--41
+\OT1/cmr/m/n/10 Die Be-trieb-ssicher-heit be-sagt, dass sich das Ger[]at/System kon-form sein-er speziellen
+ []
+
+[5{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+Overfull \hbox (8.36166pt too wide) in paragraph at lines 55--56
+\OT1/cmr/m/n/10 f[]uhren. []Arzte k[]onnten falsche Medika-mente ver-schreiben oder lebenswichtige
  []
 
 
-Overfull \hbox (34.65501pt too wide) in paragraph at lines 269--280
- [] 
+Overfull \hbox (19.7784pt too wide) in paragraph at lines 61--62
+\OT1/cmr/m/n/10 gend auf gef[]ahrliche Sub-stanzen oder Notf[]alle reagieren m[]ussen. Verz[]ogerungen
  []
 
-[16] [17]
-Overfull \hbox (7.55618pt too wide) in paragraph at lines 336--337
-[]\OT1/cmr/m/n/10 Algorithmen gle-ich-er Kom-plex-it[]atsklasse sind nicht unbe-d-ingt gle-ich schnell. 
+[6]
+Overfull \hbox (4.22284pt too wide) in paragraph at lines 72--74
+\OT1/cmr/m/n/10 ge-halt. In der Informatik/IT-Sicherheit sind In-for-ma-tio-nen im-mer sch[]utzenswerte
  []
 
-[18]
-Kapitel 6.
-[19
 
-] [20] [21] [22]
-Kapitel 7.
-[23
+Overfull \hbox (15.14519pt too wide) in paragraph at lines 94--96
+\OT1/cmr/m/n/10 Ein spezielles Prob-lem der Ver-traulichkeit sind \OT1/cmr/m/it/10 verdeck-te Kan[]ale \OT1/cmr/m/n/10 und \OT1/cmr/m/it/10 Seit-enkanalan-
+ []
 
-]
-<images/selectionssort.png, id=92, 227.85126pt x 441.65pt>
-File: images/selectionssort.png Graphic file (type png)
-<use images/selectionssort.png>
-Package pdftex.def Info: images/selectionssort.png  used on input line 487.
-(pdftex.def)             Requested size: 113.92534pt x 220.82445pt.
- [24 <./images/selectionssort.png>] [25] [26] (./AuD.aux) ) 
+[7] [8]
+Overfull \hbox (15.73404pt too wide) in paragraph at lines 138--139
+\OT1/cmr/m/n/10 M[]oglichkeit des \OT1/cmr/m/it/10 zeitlichen \OT1/cmr/m/n/10 oder \OT1/cmr/m/it/10 r[]aumlichen \OT1/cmr/m/n/10 Zusam-men-tr-e-f-fens eines sch[]utzenswerten
+ []
+
+
+Overfull \hbox (2.30618pt too wide) in paragraph at lines 140--144
+\OT1/cmr/m/n/10 Ein An-griff ist ein unau-torisiert-er Zu-griff oder Zu-griffsver-such auf auf IT-Systeme
+ []
+
+
+Overfull \hbox (48.02995pt too wide) in paragraph at lines 145--147
+[]\OT1/cmr/m/n/10 Ziel ist \OT1/cmr/m/it/10 In-for-ma-tionsver[]anderung\OT1/cmr/m/n/10 . Schutziele \OT1/cmr/m/it/10 In-tegrit[]at\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 Au-then-z-it[]at\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 Verbindlichkeit
+ []
+
+[9] (./ITSec.aux) ) 
 Here is how much of TeX's memory you used:
- 13659 strings out of 477985
- 274635 string characters out of 5840057
- 1865388 words of memory out of 5000000
- 33649 multiletter control sequences out of 15000+600000
- 519166 words of font info for 57 fonts, out of 8000000 for 9000
+ 13925 strings out of 477985
+ 279021 string characters out of 5840057
+ 1859388 words of memory out of 5000000
+ 33915 multiletter control sequences out of 15000+600000
+ 518998 words of font info for 56 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 101i,10n,104p,485b,465s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on AuD.pdf (26 pages, 243936 bytes).
+ 101i,5n,104p,489b,335s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on ITSec.pdf (9 pages, 159547 bytes).
 PDF statistics:
- 166 PDF objects out of 1000 (max. 8388607)
- 106 compressed objects within 2 object streams
+ 93 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
