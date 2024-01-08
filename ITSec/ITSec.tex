@@ -1,4 +1,4 @@
-\documentclass{book}
+\documentclass{report}
 \usepackage[ngerman]{babel}
 \usepackage{tcolorbox}
 \usepackage{amssymb}
@@ -147,4 +147,187 @@ Man unterscheidet zwei Kategorien von Angriffe:
 \end{description}
 \subsection{Angreifer}
 Ein Angreifer ist eine \textit{Person}, \textit{System} oder eine \textit{Personengruppe}, die einen Angriff ausführt.
+
+\chapter{Malware}
+Bei Malware unterscheidet man vorallem zwei wesentliche Aspekte:
+\begin{itemize}
+    \item Verbreitungsweg
+    \item Schadroutine
+\end{itemize}
+
+\section{Die Sicht des Anwenders}
+Aus der Sicht des Anwenders können selbst im Allgemeinen als \textit{positiv} gesehene Anwendungen \"bösartiges\" Verhalten aufweisen.
+Solche Fälle von \"Malware\" wären dann z.B.
+\begin{description}
+    \item[CD-Kopierschutz] verhindert das Kopier der Daten auf einer CD
+    \item[Bundestrojaner]  
+\end{description}
+
+\section{Malware-Typen}
+\subsection{Computer Virus}
+Ein Virus \textit{infiziert} seinen Wirt durch Einfügen \textit{eigenen} Fremdcodes, um sich selbst zu replizieren.
+\subsubsection{Phasen}
+Man unterscheidet bei einer Virus-Infektion zwischen drei Phasen.
+\begin{description}
+    \item[Insertion Phase] der Virus pflanzt seinen (Schad-)Code in das fremde Programm ein.
+    \item[Execution Phase] der Virus bzw. das Wirtsprogramm wird ausgeführt.
+    \item[Replication] der Virus pflanzt sich fort.
+\end{description}
+\subsubsection{Typen}
+Viren werden in verschiedene Arten klassifiziert.
+Es gibt unter anderem:
+\begin{description}
+    \item[Bootviren] befällt den Computer bei Start des Systems.
+    \item[Dateivirus] befällt eine ausführbare Datei.
+    \item[Makrovirus] befällt Dokumente mit Makrofunktionalität (Excel, Word, Powerpoint).   
+\end{description}
+\subsubsection{Erschwerung der Erkennung}
+Zur Erschwerung der Erkennung von Viren gibt es verschiedene Strategien.
+\paragraph{verschlüsselte Viren} Der Großteil des Viruscodes ist, bis auf eine Sequenz zum Entschlüssen, mit einem einfachen \"Verschlüsselungsprozess\" (wie $VirusBody \oplus 123$) verschlüsselt.
+Dieses Vorgehen erschwert die Erkennung deutlich, da der Großteil dadurch einfach als ein scheinbar zufälliger String erkannt wird. Es ist jedoch möglich, den Virus über die unverschlüsselte Entschlüsselungsmethode zu erkennen.
+\paragraph{polymorphe Viren} polymorphe Viren verändern ihr Erscheinungsbild während sie sich replizieren. Wie in der Medizin, mutieren sie. Dies geschieht durch eine sogenannte eine Mutation Engine. Diese nutzt Techniken wie Obfuscation oder fügt Garbage Code ein. 
+Dies macht eine signaturbasierende Erkennung nahezu aussichtslos.
+\paragraph{metamorphe Viren} metamorphe Viren schreiben sich während der Replikation vollständig selber. Das führt zu einem immer unterschiedlichen Virus Code im RAM.
+\subsection{Trojaner}
+Ein Trojaner besitzt, neben der bekannten und gewünschten Funktion, eine weitere unerwünschte Funktion (oftmals Backdoor).
+Ein Trojaner muss allerdings aktiv von einem Benutzer ausgeführt werden, damit es zu einem Effekt kommen kann.
+\subsection{Wurm}
+Ein Wurm ist ein sich selber replizierendes Schadprogramm.
+\subsubsection{Verbreitungswege}
+\begin{itemize}
+    \item E-Mail
+    \item P2P Netze
+    \item Instant Messaging
+    \item IRC 
+    \item Wechseldatenträger wie USB-Sticks und Festplatten.
+\end{itemize}
+\subsection{Ad-/Spyware}
+Ad- und Spyware ist Software, die im Bundle mit anderen Programmen installiert wird und das Verhalten des Nutzers auswertet (Spyware) oder Werbung einblendet(Adware)
+\subsection{Rootkits}
+Ein Rootkit manipuliert Teile des Betriebssystems um,
+\begin{itemize}
+    \item unberechtigte Zugriffe zu ermöglichen
+    \item Anmeldeprozesse und Daten zu verbergen (Prozesstabelle oder Logdateien)
+    \item das System zu überwachen (Keylogger, Netzwerkverkehr).
+\end{itemize}
+\subsection{Botnet}
+Ein Botnet bezeichnet die Menge automatisierter Schadsoftware auf vernetzten Rechnern.
+
+\section{Advanced Persistent Thread}
+Das APT bezeichnet einen \textit{komplexen}, \textit{zielgerichteten} und \textit{effektiven} Angriff über eine lange Zeit.
+\subsection{Begriffsbedeutungen}
+\begin{description}
+    \item[Advanced] Der Angreifer hat erweiterte Kenntnisse, lange Vorbereitungszeit und erhebliche Ressourcen.
+    \item[Persistent] Es gibt einen unberechtigten Zugriff auf Opfersystem über einen langen Zeitraum.
+    \item[Threat] Der Angreifer verfolgt ein klares Ziel und ist hochqualifiziert.  
+\end{description}
+\section{Schutzmaßnahmen}
+\subsection{Virenscanner}
+Ein Virenscanner ist eine Software zur Erkennung von Viren.
+\subsubsection{Erkennungsmethoden}
+\begin{description}
+    \item[Signaturen]: Statische Signaturen für bekannte Viren
+    \item[Heuristiken]: Generische Signaturen für Virenfamilien
+    \item[Sandboxing]: Ausführen des Virus in einer isolierten Umgebung.  
+\end{description}
+\subsection{Firewall}
+Eine Firewall dient zur Kontrolle des Netzverkehrs zwischen dem Internet und einem internen Netz.
+\subsection{IDS und IPS}
+\subsubsection{Intrusion Detection System (IDS)}
+Das IDS dient der Erkennung von Angriffen und Generierung von Warnmeldungen.
+\subsubsection{Intrusion Prevention System (IPS)}
+Das IPS dient der Unterbindung von Angriffen
+\subsubsection{Problematiken}
+Die Problematiken von \textit{IPS} und \textit{IDS} umfassen vorallem falsch \textbf{negativ} aber auch falsch \textbf{positve} Ergebnisse.
+\subsection{Honeypot}
+Der Honeypot ist ein scheinbar verwundbares IT-System, das den Angreifer anlocken/vom eigentlichen wichtigen System ablenken soll.
+\subsection{Pentesting}
+Das Pentesting bezeichnet die \textit{berechtigte} Durchführung von Angriffen zwecks Bewertung von Sicherheitsaspekten auf ein System.
+\chapter{Kryptologie}
+\paragraph{Klassische Kryptologie} diente der Geheimhaltung von Nachrichten (\textit{Vertraulichkeit}).
+\paragraph{Moderne Kryptologie} (seit 1976) dient der sicheren Konzeption und Konstruktion von IT-Systemen. (\textit{Vertraulichkeit, Integrität, Authenzität, Verbindlichkeit})
+\section{Geschichte der Kryptologie}
+\subsection{Monoalphabetische Substitutionschiffren}
+Verschlüsselung basierend auf Permutation des Alphabetes. \\
+Beispiel: \textit{Caesar-Chiffre}
+\subsection{Polyalphabetische Chiffren}
+Nutzung mehrerer monoalphabetischer Chiffren. \\
+Beispiel: \textit{Vignenere-Chiffre}
+\subsection{Kerckhoffs Prinzipien}
+\begin{enumerate}
+    \item Das System musst praktisch unentzifferbar sein.
+    \item Das System darf öffentlich zugänglich sein, ohne dadurch die Sicherheit zu gefährden.
+    \item Der Schlüssel muss kommunizierbar sein.
+    \item Es muss auf Kommunikation anwendbar sein.
+    \item Es musst durchführbar sein.
+    \item Das System muss einfach zu nutzen sein.
+\end{enumerate}
+\section{Symmetrische Kryptografie}
+Beide Kommunikationspartner nutzen den gleichen Schlüssel \textit{k}. Der Schlüssel muss ausgetauscht werden. \
+Es gilt: 
+\begin{center}
+    $Dec_{k}(Enc_{k}(m)) = m $
+\end{center}
+\subsection{Caesar-Chiffre}
+\subsubsection{Eigenschaften}
+\begin{description}
+    \item[Schlüsselraum] 26
+    \item[Schwachstelle] Brute-Force  
+\end{description}
+Bei der Caesar-Chiffre werden alle Buchstaben des Alphabetes um einen Wert \textit{k} nach rechts verschoben.
+\subsubsection{Sicherheit}
+Das Caesar-Chiffre ist aufgrund von relativ wenig Möglichkeiten des Schlüssels (1-26) sehr schnell zu überwinden. Im Falle eines Brute-Force
+Angriffes, erhält man allerspätestens nach 25 Durchläufen den Klartext.
+
+\subsection{Schlüsselraum}
+Der Schlüsselraum beschreibt die Größe eines Schlüssels und den daraus resultierenden möglichen Kombinationen. \\
+Eine Schlüssellänge von 64 Bit, also ein Schlüsselraum von $ 2^{64} $ ist nicht mehr sicher.
+Das BSI empfiehlt für..
+\begin{description}
+    \item[symmetrische Verfahren] \textit{k} $\ge$ 128 Bit
+    \item[asymmetrische Verfahren] $\ge$ 3000 Bit (Faktorisierung, diskreter Logarithmus) bzw. $\ge$ 250 Bit (elliptische Kurven) 
+    \item[asymmetrische postquanten Verfahren] $\ge$ 15632 Bit (strukturierte Gitter) $\ge$ 524160 Bit (code basiert)
+\end{description}
+\subsection{One-time Pad}
+Das One-Time Pad bietet zwar perfekte Sicherheit, ist jedoch praktisch nicht anwendbar.
+Der Schlüssel \textit{k} ist 
+\begin{itemize}
+    \item zufällig geniert
+    \item nur einmal genutzt
+    \item so lang wie die verschlüsselte Nachricht
+\end{itemize}
+Für die Verschlüsselung bzw. Entschlüsselung gilt:
+\begin{center}
+    $$ c = m \oplus k $$
+    $$ m = c \oplus k $$
+\end{center}
+\subsection{Perfekte Sicherheit}
+Ein Verschlüsselungsverfahren ist \textit{perfekt sicher}, wenn es gegen Angreifer mit unbegrenzten Ressourcen sicher ist.
+\subsection{Sicherheitsniveau}
+Ein Kryptoverfahren hat ein Sicherheitsniveau von \textit{n} Bits, wenn ein Angreifer $2^{n}$ Versuche benötigt, um das Verfahren zu brechen.
+
+\section{Zufallszahlen}
+Zufallszahlen werden in der Kryptografie häufig verwendet. Man unterscheidet zwischen 
+\begin{description}
+    \item[Echter Zufall] basierend auf physikalischen Phänomenen.
+    \item[Pseudozufallszahlen] basierend auf deterministischen Algorithmen.  
+\end{description}
+\subsection{Echte Zufallszahlengeneratoren (TRNG)}
+Echte Zufallsgeneratoren erzeugen echte Zufallszahlen basierend auf physikalischen Phänomenen.
+\subsection{Pseudozufallszahlengeneratoren (PRNG)}
+Pseudozufallszahlengeneratoren erzeugen ausgehend von einem \textit{Seed} eine Sequenz von Zahlen.
+\subsection{Kryptografisch sichere Pseudozufallszahlengeneratoren (CSPRNG)}
+krypt. s. Pseuzzg. erzeugen nicht vorhersehbare Zufallszahlen. \ 
+Beispiele: LFSR
+\subsection{Stromchiffren:} Verschlüsseln Daten in Blöcken fester Größe, z.B. AES, durch Anwendung von Schlüssel- und Substitutions-/Permutationsoperationen.
+
+\subsection{Blockchiffren:} Arbeiten, wie DES, ähnlich wie Stromchiffren, verwenden jedoch eine feste Anzahl von Runden für die Verschlüsselung von Datenblöcken.
+\section{Hashfunktionen}
+Das Ziel von Hashfunktionen ist die \textit{Integritätsprüfung}. Hashfunktionen bilden einen Bitstring beliebiger Länge auf einen Bitstring fester Länge ab. \
+Ein Nachteil von Hashfunktionen sind mögliche Kollisionen, sodass zwei unterschiedliche Eingangswerte denselben Ausgangswert zur Folge haben.
+
+\subsection{Kryptografische Hashfunktionen}
+krypt. Hashfunktionen müssen effizient berechenbar sein, Kollisionsresistent sein und Einwegeigenschaften haben.
+
+\subsection{}
 \end{document}

@@ -1,35 +1,87 @@
 \babel@toc {ngerman}{}\relax 
-\contentsline {chapter}{\numberline {1}Grundlagen}{5}{}%
-\contentsline {section}{\numberline {1.1}Die alltäglichen Probleme}{5}{}%
-\contentsline {section}{\numberline {1.2}By Design}{5}{}%
-\contentsline {subsection}{\numberline {1.2.1}Betriebssicherheit/Safety}{5}{}%
-\contentsline {subsection}{\numberline {1.2.2}Informationssicherheit/Security}{6}{}%
-\contentsline {subsection}{\numberline {1.2.3}Wechselwirkungen}{6}{}%
-\contentsline {paragraph}{Security-Verletzungen können Safety gefährden}{6}{}%
-\contentsline {paragraph}{Security-Maßnahme verletzt Safety}{6}{}%
-\contentsline {paragraph}{Safety-Verletzung gefährdet Security}{6}{}%
-\contentsline {section}{\numberline {1.3}Definitionen}{7}{}%
-\contentsline {paragraph}{Information}{7}{}%
-\contentsline {paragraph}{Daten}{7}{}%
-\contentsline {paragraph}{Datensicherheit}{7}{}%
-\contentsline {paragraph}{IT-System}{7}{}%
-\contentsline {paragraph}{IT-Verbund}{7}{}%
-\contentsline {section}{\numberline {1.4}Schutzziele}{7}{}%
-\contentsline {subsection}{\numberline {1.4.1}Übersicht}{7}{}%
-\contentsline {subsection}{\numberline {1.4.2}Vertraulichkeit}{7}{}%
-\contentsline {subsubsection}{verdeckte Kanäle}{8}{}%
-\contentsline {subsubsection}{Seitenkanalangriffe}{8}{}%
-\contentsline {subsection}{\numberline {1.4.3}Integrität}{8}{}%
-\contentsline {subsection}{\numberline {1.4.4}Authenzität}{8}{}%
-\contentsline {subsection}{\numberline {1.4.5}Verbindlichkeit}{8}{}%
-\contentsline {subsection}{\numberline {1.4.6}Verfügbarkeit}{8}{}%
-\contentsline {subsubsection}{Berechnung der Verfügbarkeit}{8}{}%
-\contentsline {subsection}{\numberline {1.4.7}Privatheit}{8}{}%
-\contentsline {section}{\numberline {1.5}IT-Sicherheit}{8}{}%
-\contentsline {subsection}{\numberline {1.5.1}Security-Policy}{9}{}%
-\contentsline {subsection}{\numberline {1.5.2}Gefahr}{9}{}%
-\contentsline {subsection}{\numberline {1.5.3}Bedrohung}{9}{}%
-\contentsline {subsection}{\numberline {1.5.4}Schwachstelle/Vulnerability}{9}{}%
-\contentsline {subsection}{\numberline {1.5.5}Gefährdung}{9}{}%
-\contentsline {subsection}{\numberline {1.5.6}Angriff}{9}{}%
-\contentsline {subsection}{\numberline {1.5.7}Angreifer}{9}{}%
+\contentsline {chapter}{\numberline {1}Grundlagen}{3}{}%
+\contentsline {section}{\numberline {1.1}Die alltäglichen Probleme}{3}{}%
+\contentsline {section}{\numberline {1.2}By Design}{3}{}%
+\contentsline {subsection}{\numberline {1.2.1}Betriebssicherheit/Safety}{3}{}%
+\contentsline {subsection}{\numberline {1.2.2}Informationssicherheit/Security}{4}{}%
+\contentsline {subsection}{\numberline {1.2.3}Wechselwirkungen}{4}{}%
+\contentsline {paragraph}{Security-Verletzungen können Safety gefährden}{4}{}%
+\contentsline {paragraph}{Security-Maßnahme verletzt Safety}{4}{}%
+\contentsline {paragraph}{Safety-Verletzung gefährdet Security}{4}{}%
+\contentsline {section}{\numberline {1.3}Definitionen}{5}{}%
+\contentsline {paragraph}{Information}{5}{}%
+\contentsline {paragraph}{Daten}{5}{}%
+\contentsline {paragraph}{Datensicherheit}{5}{}%
+\contentsline {paragraph}{IT-System}{5}{}%
+\contentsline {paragraph}{IT-Verbund}{5}{}%
+\contentsline {section}{\numberline {1.4}Schutzziele}{5}{}%
+\contentsline {subsection}{\numberline {1.4.1}Übersicht}{5}{}%
+\contentsline {subsection}{\numberline {1.4.2}Vertraulichkeit}{5}{}%
+\contentsline {subsubsection}{verdeckte Kanäle}{6}{}%
+\contentsline {subsubsection}{Seitenkanalangriffe}{6}{}%
+\contentsline {subsection}{\numberline {1.4.3}Integrität}{6}{}%
+\contentsline {subsection}{\numberline {1.4.4}Authenzität}{6}{}%
+\contentsline {subsection}{\numberline {1.4.5}Verbindlichkeit}{6}{}%
+\contentsline {subsection}{\numberline {1.4.6}Verfügbarkeit}{6}{}%
+\contentsline {subsubsection}{Berechnung der Verfügbarkeit}{6}{}%
+\contentsline {subsection}{\numberline {1.4.7}Privatheit}{6}{}%
+\contentsline {section}{\numberline {1.5}IT-Sicherheit}{6}{}%
+\contentsline {subsection}{\numberline {1.5.1}Security-Policy}{7}{}%
+\contentsline {subsection}{\numberline {1.5.2}Gefahr}{7}{}%
+\contentsline {subsection}{\numberline {1.5.3}Bedrohung}{7}{}%
+\contentsline {subsection}{\numberline {1.5.4}Schwachstelle/Vulnerability}{7}{}%
+\contentsline {subsection}{\numberline {1.5.5}Gefährdung}{7}{}%
+\contentsline {subsection}{\numberline {1.5.6}Angriff}{7}{}%
+\contentsline {subsection}{\numberline {1.5.7}Angreifer}{7}{}%
+\contentsline {chapter}{\numberline {2}Malware}{8}{}%
+\contentsline {section}{\numberline {2.1}Die Sicht des Anwenders}{8}{}%
+\contentsline {section}{\numberline {2.2}Malware-Typen}{8}{}%
+\contentsline {subsection}{\numberline {2.2.1}Computer Virus}{8}{}%
+\contentsline {subsubsection}{Phasen}{8}{}%
+\contentsline {subsubsection}{Typen}{9}{}%
+\contentsline {subsubsection}{Erschwerung der Erkennung}{9}{}%
+\contentsline {paragraph}{verschlüsselte Viren}{9}{}%
+\contentsline {paragraph}{polymorphe Viren}{9}{}%
+\contentsline {paragraph}{metamorphe Viren}{9}{}%
+\contentsline {subsection}{\numberline {2.2.2}Trojaner}{9}{}%
+\contentsline {subsection}{\numberline {2.2.3}Wurm}{9}{}%
+\contentsline {subsubsection}{Verbreitungswege}{10}{}%
+\contentsline {subsection}{\numberline {2.2.4}Ad-/Spyware}{10}{}%
+\contentsline {subsection}{\numberline {2.2.5}Rootkits}{10}{}%
+\contentsline {subsection}{\numberline {2.2.6}Botnet}{10}{}%
+\contentsline {section}{\numberline {2.3}Advanced Persistent Thread}{10}{}%
+\contentsline {subsection}{\numberline {2.3.1}Begriffsbedeutungen}{10}{}%
+\contentsline {section}{\numberline {2.4}Schutzmaßnahmen}{11}{}%
+\contentsline {subsection}{\numberline {2.4.1}Virenscanner}{11}{}%
+\contentsline {subsubsection}{Erkennungsmethoden}{11}{}%
+\contentsline {subsection}{\numberline {2.4.2}Firewall}{11}{}%
+\contentsline {subsection}{\numberline {2.4.3}IDS und IPS}{11}{}%
+\contentsline {subsubsection}{Intrusion Detection System (IDS)}{11}{}%
+\contentsline {subsubsection}{Intrusion Prevention System (IPS)}{11}{}%
+\contentsline {subsubsection}{Problematiken}{11}{}%
+\contentsline {subsection}{\numberline {2.4.4}Honeypot}{11}{}%
+\contentsline {subsection}{\numberline {2.4.5}Pentesting}{11}{}%
+\contentsline {chapter}{\numberline {3}Kryptologie}{12}{}%
+\contentsline {paragraph}{Klassische Kryptologie}{12}{}%
+\contentsline {paragraph}{Moderne Kryptologie}{12}{}%
+\contentsline {section}{\numberline {3.1}Geschichte der Kryptologie}{12}{}%
+\contentsline {subsection}{\numberline {3.1.1}Monoalphabetische Substitutionschiffren}{12}{}%
+\contentsline {subsection}{\numberline {3.1.2}Polyalphabetische Chiffren}{12}{}%
+\contentsline {subsection}{\numberline {3.1.3}Kerckhoffs Prinzipien}{12}{}%
+\contentsline {section}{\numberline {3.2}Symmetrische Kryptografie}{13}{}%
+\contentsline {subsection}{\numberline {3.2.1}Caesar-Chiffre}{13}{}%
+\contentsline {subsubsection}{Eigenschaften}{13}{}%
+\contentsline {subsubsection}{Sicherheit}{13}{}%
+\contentsline {subsection}{\numberline {3.2.2}Schlüsselraum}{13}{}%
+\contentsline {subsection}{\numberline {3.2.3}One-time Pad}{13}{}%
+\contentsline {subsection}{\numberline {3.2.4}Perfekte Sicherheit}{14}{}%
+\contentsline {subsection}{\numberline {3.2.5}Sicherheitsniveau}{14}{}%
+\contentsline {section}{\numberline {3.3}Zufallszahlen}{14}{}%
+\contentsline {subsection}{\numberline {3.3.1}Echte Zufallszahlengeneratoren (TRNG)}{14}{}%
+\contentsline {subsection}{\numberline {3.3.2}Pseudozufallszahlengeneratoren (PRNG)}{14}{}%
+\contentsline {subsection}{\numberline {3.3.3}Kryptografisch sichere Pseudozufallszahlengeneratoren (CSPRNG)}{14}{}%
+\contentsline {subsection}{\numberline {3.3.4}Stromchiffren:}{14}{}%
+\contentsline {subsection}{\numberline {3.3.5}Blockchiffren:}{15}{}%
+\contentsline {section}{\numberline {3.4}Hashfunktionen}{15}{}%
+\contentsline {subsection}{\numberline {3.4.1}Kryptografische Hashfunktionen}{15}{}%
+\contentsline {subsection}{\numberline {3.4.2}}{15}{}%
